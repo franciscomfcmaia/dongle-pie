@@ -53,7 +53,7 @@ dongleDetector.storage.on('removedDevice', function(drive){
 });
 ```
 
-This will create a rather basic event listener. By default we apply a filter on a signal as well as set a default 1000ms interval between df query. The default signal filter is applied and it will only call the ***newDevice*** if thie new or removed drive is mounted on a ***"/media/"***. Do note you can overide them and listen to any and all new media like such.
+This will create a rather basic event listener. By default we apply a filter on a signal as well as set a default 1000ms interval between df query. The default signal filter is applied and it will only call the ***newDevice*** if thie new or removed drive is mounted on a **"/media/"**. Do note you can overide them and listen to any and all new media like such.
 
 ````
 dongleDetector.watchStorage(filter, interval);
